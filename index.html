@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decorated Man's Decorated Page</title>
-   <style>
+    <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 0;
             padding: 0;
-            background-color: rgb(68, 70, 84); /* Updated background color */
+            background-color: rgb(68, 70, 84);
         }
         .container {
-            display: flex;
+            /* display: flex; */ /* Remove this line to stack buttons */
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
         .button {
+            display: block; /* Make buttons block-level to stack vertically */
             padding: 15px 30px;
             font-size: 18px;
             margin: 10px;
